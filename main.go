@@ -7,16 +7,17 @@ import (
 )
 
 func square(num float64) float64 {
-	// formula -> num * num
+	// Formula -> num * num
 	return num * num
 }
 
 func area(radius float64) float64 {
-	// formula -> PI * radius * radius
+	// Formula -> PI * radius * radius
 	return math.Round(math.Pi * square(radius) * 100) / 100
 }
 
 func main() {
+	// Testing
 	var num float64 = math.Floor(3.14)
 	var someString string = "some string"
 	var titleString string = strings.ToUpper(someString)
