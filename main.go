@@ -7,6 +7,7 @@ import (
 )
 
 func square(num float64) float64 {
+	// formula -> num * num
 	return num * num
 }
 
@@ -23,7 +24,7 @@ func main() {
 	fmt.Printf("The floor of 3.14 is %v\n", num)
 	fmt.Printf("The square of %v is %v\n", num, square(num))
 	fmt.Printf("The area of a circle of radius 5 units is %v units\n", area(5))
-	
+
 	fmt.Println()
 	fmt.Println(titleString)
 }
