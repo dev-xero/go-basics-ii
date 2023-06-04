@@ -10,6 +10,11 @@ func square(num float64) float64 {
 	return num * num
 }
 
+func area(radius float64) float64 {
+	// formula -> PI * radius * radius
+	return math.Round(math.Pi * square(radius) * 100) / 100
+}
+
 func main() {
 	var num float64 = math.Floor(3.14)
 	var someString string = "some string"
@@ -17,5 +22,8 @@ func main() {
 
 	fmt.Printf("The floor of 3.14 is %v\n", num)
 	fmt.Printf("The square of %v is %v\n", num, square(num))
+	fmt.Printf("The area of a circle of radius 5 units is %v units\n", area(5))
+	
+	fmt.Println()
 	fmt.Println(titleString)
 }
